@@ -23,19 +23,19 @@ A simple and visually appealing Pomodoro Timer built with React, Node.js, Howler
 ## Installation
 
 1. Clone the repository  
-   git clone https://github.com/rowanjames04/full-stack-pomodoro-timer.git
+   `git clone https://github.com/rowanjames04/full-stack-pomodoro-timer.git`
 
 2. Navigate into the project directory  
-   cd pomodoro-timer-react
+   `cd full-stack-pomodoro-timer`
 
 3. Install dependencies  
-   npm install
+   `npm install`
 
 4. Start the backend server (if included)  
-   node server.js
+   `node server.js`
 
 5. Run the React frontend  
-   npm start
+   `npm start`
 
 *Note: This project assumes a Node.js backend is part of the full stack setup. If your current repo does not include the backend code, you may remove or modify the backend server steps.*
 
