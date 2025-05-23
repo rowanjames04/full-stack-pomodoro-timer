@@ -23,7 +23,7 @@ A simple and visually appealing Pomodoro Timer built with React, Node.js, Howler
 ## Installation
 
 1. Clone the repository  
-   git clone https://github.com/yourusername/pomodoro-timer-react.git
+   git clone https://github.com/rowanjames04/full-stack-pomodoro-timer.git
 
 2. Navigate into the project directory  
    cd pomodoro-timer-react
@@ -59,4 +59,4 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-For questions or feedback, please open an issue or contact me at your.email@example.com
+For questions or feedback, please open an issue or contact me at rowanjames419@gmail.com
