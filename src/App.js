@@ -97,23 +97,23 @@ function App() {
     }
   }
 
-  // Rendered JSX
+  // Render the Pomodoro Timer UI
   return (
     <div
       style={{
         backgroundColor: onBreak ? breakBackgroundColor : workBackgroundColor,
-        minHeight: "100vh", // Ensures the background covers the full viewport
-        margin: 0, // Removes default margin
-        padding: 0, // Removes default padding
+        minHeight: "100vh",
+        margin: 0,
+        padding: 0,
         display: "flex",
         flexDirection: "column",
-        alignItems: "center", // Centers content horizontally
-        justifyContent: "space-between", // Spaces out content vertically
+        alignItems: "center",
+        justifyContent: "space-between",
       }}
     >
       <div className="d-flex align-items-center flex-column text-white">
         <div className="lead">
-          <h2 className="display-2" style={{ fontWeight: "bold" }}>Pomodoro Timer</h2> {/* Bold heading */}
+          <h2 className="display-2" style={{ fontWeight: "bold" }}>Pomodoro Timer</h2>
         </div>
         <div className="interval-indicators d-flex justify-content-center py-3">
           <h3 className="mx-3">Work Intervals: {workInterval}</h3>
@@ -144,7 +144,6 @@ function App() {
                 fontSize: "8rem", // Adjust size as needed
                 margin: 0, // Remove any margin
                 color: "white", // Text color
-                // fontWeight: "bold", // Make the time bold
               }}
             >
               {timeMin}:{timeSec < 10 ? "0" + timeSec : timeSec}
@@ -167,7 +166,7 @@ function App() {
                 style={{
                   width: "75px",
                   height: "75px",
-                  backgroundColor: onBreak ? breakBackgroundColor : workBackgroundColor, // Corrected color for the plus button
+                  backgroundColor: onBreak ? breakBackgroundColor : workBackgroundColor,
                   color: "white",
                   border: "none", // Remove borders
                   borderRadius: "50%", // Round button
@@ -177,7 +176,7 @@ function App() {
                 }}
                 onClick={increaseTime}
               >
-                <h1 style={{ margin: 0, fontSize: "2rem", marginTop: "-1px" }}>+</h1> {/* Shift up by 1px */}
+                <h1 style={{ margin: 0, fontSize: "2rem", marginTop: "-1px" }}>+</h1>
               </Button>
               <Button
                 className="mx-2"
@@ -185,7 +184,7 @@ function App() {
                 style={{
                   width: "75px",
                   height: "75px",
-                  backgroundColor: onBreak ? breakBackgroundColor : workBackgroundColor, // Corrected color for the minus button
+                  backgroundColor: onBreak ? breakBackgroundColor : workBackgroundColor,
                   color: "white",
                   border: "none", // Remove borders
                   borderRadius: "50%", // Round button
@@ -195,7 +194,7 @@ function App() {
                 }}
                 onClick={reduceTime}
               >
-                <h1 style={{ margin: 0, fontSize: "2rem", marginTop: "-1px" }}>−</h1> {/* Shift up by 1px */}
+                <h1 style={{ margin: 0, fontSize: "2rem", marginTop: "-1px" }}>−</h1>
               </Button>
             </div>
           </div>
@@ -207,7 +206,7 @@ function App() {
           style={{
             width: "150px",
             height: "75px",
-            backgroundColor: onBreak ? breakButtonColor : workButtonColor, // Button color set to #215FB0
+            backgroundColor: onBreak ? breakButtonColor : workButtonColor, 
             border: "none", // Remove borders
             color: "white",
             marginRight: "40px",
@@ -221,7 +220,7 @@ function App() {
           style={{
             width: "150px",
             height: "75px",
-            backgroundColor: onBreak ? breakButtonColor : workButtonColor, // Button color set to #215FB0
+            backgroundColor: onBreak ? breakButtonColor : workButtonColor,
             border: "none", // Remove borders
             color: "white",
             marginLeft: "40px",
@@ -236,7 +235,7 @@ function App() {
           style={{
             width: "150px",
             height: "75px",
-            backgroundColor: onBreak ? breakButtonColor : workButtonColor, // Button color set to #215FB0
+            backgroundColor: onBreak ? breakButtonColor : workButtonColor,
             border: "none", // Remove borders
             color: "white",
             marginLeft: "40px",

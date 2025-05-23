@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Full Stack Pomodoro Timer React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and visually appealing Pomodoro Timer built with React, Node.js, Howler.js for audio, and React Bootstrap for UI components. This app helps users manage work and break intervals effectively by providing an easy-to-use timer with start, pause, reset, and adjustable time features.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Work interval timer set to 25 minutes by default
+- Break interval timer set to 5 minutes by default
+- Audio feedback with ticking clock sound during countdown and bell sound when interval ends
+- Visual indicators for work and break sessions with color changes
+- Adjustable timer duration (1 to 100 minutes)
+- Start, pause, and reset controls
+- Tracks the number of completed work and break intervals
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React (Functional Components with Hooks)
+- Node.js backend (if applicable)
+- Howler.js for audio playback
+- React Bootstrap for styled buttons and layout
+- CSS-in-JS for inline styling
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository  
+   git clone https://github.com/yourusername/pomodoro-timer-react.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate into the project directory  
+   cd pomodoro-timer-react
 
-### `npm run build`
+3. Install dependencies  
+   npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Start the backend server (if included)  
+   node server.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. Run the React frontend  
+   npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*Note: This project assumes a Node.js backend is part of the full stack setup. If your current repo does not include the backend code, you may remove or modify the backend server steps.*
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Click "Start" to begin the work interval timer.
+- Use the "+" and "−" buttons to adjust the timer duration before starting.
+- Click "Pause" to pause the timer.
+- Click "Reset" to reset the timer and intervals.
+- When the work interval ends, the timer automatically switches to the break interval and vice versa.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## File Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `src/` — Main source code folder
+- `src/media/` — Audio files (clock ticking and bell sounds)
+- `App.js` — Main React component with timer logic and UI
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
+This project is licensed under the MIT License.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For questions or feedback, please open an issue or contact me at your.email@example.com
